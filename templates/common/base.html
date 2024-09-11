@@ -1,0 +1,1468 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gyan</title>
+    <link rel="preconnect" href="{% static "https://fonts.gstatic.com" %}">
+<link href="{% static "https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}  ">
+    <link rel="stylesheet" href= "{% static "css/all.min.css" %}">
+    <link rel="stylesheet" href= "{% static "css/slick.css" %}">
+    <link rel="stylesheet" href= "{% static "css/style.css" %}">
+    <link rel="stylesheet" href= "{% static 'css/responsive.css' %}">
+</head>
+<body>
+
+    <!-- ============================
+        header-part start
+    ============================== -->
+    <header>
+        {% block head %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9">
+                    <p>Have any Trouble?</p>
+                    <p><a href="tel: 1234 567 890"><i class="fas fa-phone"></i> (+880) 1234 567 890</a></p>
+                    <p><a href="mailto:{{ user_email }}"> <i class="fas fa-envelope"></i> atannurrifat21395@gmail.com</a></p>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <p class="reg"><a href="/">Registe/ </a><a href="/login"> Login/</a><a href="/change-password"> change_password/</a><a class="btn btn-primary" href="/logout"> Logout</a></p>
+                </div>
+            </div>
+        </div>
+
+        {% endblock head %}
+
+    </header>
+    
+    <!-- ============================
+        header-part end
+    ============================== -->
+
+      <!-- ============================
+        navbar part  start
+    ============================== -->
+
+    <nav class="navbar navbar-expand-lg ">
+        {% block nav %}
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src=" {% static "images/logo.png" alt="logo" %} ">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                   <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Our courses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Our Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Our Teachers</a>
+                    </li>
+    
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/contract">contact</a>
+                    </li>
+                    </ul>
+                  <div class="button">
+                      <a href="#">Get Started Now </a>
+                  
+                  </div>  
+   
+        
+              
+    
+                
+            
+            </div>
+          </div>
+        {% endblock nav %}
+
+        
+      </nav>
+
+
+      <!-- ============================
+        navbar part  end
+    ============================== -->
+
+    <!-- ============================
+        banner-part start
+    ============================== -->
+
+    <section id="banner-part">
+        {% block banner %}
+        <div class="slider">
+            <div class="banner">
+                <div class="overlay">
+                    <div class="container">
+                        <h2>Let’s Learn</h2>
+                        <h1> For Bright Future</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus comodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <a href="#">Start a Course</a>
+                        <a class="different" href="#">Take a Tour</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="banner banner2">
+                <div class="overlay">
+                    <div class="container">
+                        <h2>Let’s Learn</h2>
+                        <h1> For Bright Future</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus comodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <a href="#">Start a Course</a>
+                        <a class="different" href="#">Take a Tour</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="banner banner3">
+                <div class="overlay">
+                    <div class="container">
+                        <h2>Let’s Learn</h2>
+                        <h1> For Bright Future</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus comodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <a href="#">Start a Course</a>
+                        <a class="different" href="#">Take a Tour</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        
+        {% endblock banner %}
+    </section>
+
+
+     <!-- ============================
+        banner-part end
+    ============================== -->
+
+         <!-- ============================
+        banner-bottom-part start
+    ============================== -->
+    <section id="banner-bottom">
+        {% block banner_bottom %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 p-0 col-md-4">
+                    <div class="text">
+                        <div class="iteam">
+                            <img src="images/online_class_icon.png" alt="icon">
+                            <h4>Online Classes</h4>
+                            <a href="#">Learn More<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0 col-md-4">
+                    <div class="text">
+                        <div class="iteam">
+                            <img src="images/online_class_icon.png" alt="icon">
+                            <h4>Online Classes</h4>
+                            <a href="#">Learn More<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0 col-md-4">
+                    <div class="text">
+                        <div class="iteam">
+                            <img src="images/online_class_icon.png" alt="icon">
+                            <h4>Online Classes</h4>
+                            <a href="#">Learn More<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock banner_bottom %}
+    </section>
+
+
+         <!-- ============================
+        banner- bottom-part end
+    ============================== -->
+
+
+             <!-- ============================
+         About-part start
+    ============================== -->
+
+    <section id="about-part">
+        {% block about %}
+        <div class="title">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua.
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about">
+                        <div class="about-slider">
+                            <div class="iteam">
+                                
+                                <img src="{% static "images/aboutSlider1.png" %}" alt="1">
+                            </div>
+                            <div class="iteam">
+                                <img src="{% static "images/aboutSlider2.png" %}" alt="2">
+                            </div>
+                            <div class="iteam">
+                                <img src="{% static "images/aboutSlider3.png" %}" alt="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus coodo vivera maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <p>et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <a href="#">Know More</a>    
+                        <a href="#">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock about %}
+    </section>
+
+             <!-- ============================
+         About-part end
+    ============================== -->
+
+     <!-- ============================
+        counter-part strat
+    ============================== -->
+    {% block counter_part %}
+
+    <section id="counter-part">
+      
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="iteam">
+                        <h3 class="counter">567</h3>
+                         <p>   Teachers</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="iteam">
+                        <h3 class="counter">1757</h3>
+                         <p>Students</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="iteam">
+                        <h3 class="counter">102</h3>
+                         <p>Offline Courses</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="iteam">
+                        <h3 class="counter">56</h3>
+                         <p>Online Classes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    {% endblock counter_part %}
+
+     <!-- ============================
+        counter-part end
+    ============================== -->
+
+      <!-- ============================
+        course-part end
+    ============================== -->
+
+    <section id="course-part">
+        {% block course_part %}
+        <div class="title">
+            <h2>Our Courses</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class="container">
+            <div class="course-slider">
+                <div class="iteam">
+                    <div class="img">
+                        <img src="{% static "images/ourcourse1.png" %}" alt="1">
+                        <div class="overlay"><i class="fas fa-link"></i></div>
+                    </div>
+                    <div class="introduction">
+                        <div class="name">
+                            <img src="{% static "images/ourcourse1Image.png" %}" alt="11">
+                            <p> conduct part</p>
+                            <h5> Sujon shaha</h5>
+
+                        </div>
+                        <div class="rating">
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+
+                        
+                            <p>4.8 Ratings</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Advance Graphic Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="duration">
+                        <div class="time">
+                            <p>Course  </p>
+                            <p class="month"> 5 month</p>
+                        </div>
+                        <div class="time">
+                            <p>Course Fee</p>
+                            <p class="month">375 USD</p>
+                        </div>
+                        <div class="time">
+                            <p>Total Classes</p>
+                            <p class="month">40 Classes</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="#">Enroll  Now</a>
+                    </div>
+        
+                </div>
+            
+                <div class="iteam">
+                    <div class="img">
+                        <img src="{% static "images/ourcourse1.png" %}" alt="1">
+                        <div class="overlay"><i class="fas fa-link"></i></div>
+                    </div>
+                    <div class="introduction">
+                        <div class="name">
+                            <img src="{% static "images/ourcourse1Image.png" %}" alt="11">
+                            <p> conduct part</p>
+                            <h5> Sujon shaha</h5>
+
+                        </div>
+                        <div class="rating">
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+
+                        
+                            <p>4.8 Ratings</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Advance Graphic Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="duration">
+                        <div class="time">
+                            <p>Course  </p>
+                            <p class="month"> 5 month</p>
+                        </div>
+                        <div class="time">
+                            <p>Course Fee</p>
+                            <p class="month">375 USD</p>
+                        </div>
+                        <div class="time">
+                            <p>Total Classes</p>
+                            <p class="month">40 Classes</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="#">Enroll  Now</a>
+                    </div>
+        
+                </div>    
+                <div class="iteam">
+                    <div class="img">
+                        <img src="{% static "images/ourcourse1.png" %}" alt="1">
+                        <div class="overlay"><i class="fas fa-link"></i></div>
+                    </div>
+                    <div class="introduction">
+                        <div class="name">
+                            <img src="{% static "images/ourcourse1Image.png" %}" alt="11">
+                            <p> conduct part</p>
+                            <h5> Sujon shaha</h5>
+
+                        </div>
+                        <div class="rating">
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+
+                        
+                            <p>4.8 Ratings</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Advance Graphic Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="duration">
+                        <div class="time">
+                            <p>Course </p>
+                            <p class="month"> 5 month</p>
+                        </div>
+                        <div class="time">
+                            <p>Course Fee</p>
+                            <p class="month">375 USD</p>
+                        </div>
+                        <div class="time">
+                            <p>Total Classes</p>
+                            <p class="month">40 Classes</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="#">Enroll  Now</a>
+                    </div>
+        
+                </div>
+                <div class="iteam">
+                    <div class="img">
+                        <img src="{% static "images/ourcourse1.png" %}" alt="1">
+                        <div class="overlay"><i class="fas fa-link"></i></div>
+                    </div>
+                    <div class="introduction">
+                        <div class="name">
+                            <img src="{% static "images/ourcourse1Image.png" %}" alt="11">
+                            <p> conduct part</p>
+                            <h5> Sujon shaha</h5>
+
+                        </div>
+                        <div class="rating">
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+
+                        
+                            <p>4.8 Ratings</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Advance Graphic Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="duration">
+                        <div class="time">
+                            <p>Course  Duration</p>
+                            <p class="month"> 5 month</p>
+                        </div>
+                        <div class="time">
+                            <p>Course Fee</p>
+                            <p class="month">375 USD</p>
+                        </div>
+                        <div class="time">
+                            <p>Total Classes</p>
+                            <p class="month">40 Classes</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="#">Enroll  Now</a>
+                    </div>
+        
+                </div>
+                <div class="iteam">
+                    <div class="img">
+                        <img src="{% static "images/ourcourse1.png" %}" alt="1">
+                        <div class="overlay"><i class="fas fa-link"></i></div>
+                    </div>
+                    <div class="introduction">
+                        <div class="name">
+                            <img src="{% static "images/ourcourse1Image.png" %}" alt="11">
+                            <p> conduct part</p>
+                            <h5> Sujon shaha</h5>
+
+                        </div>
+                        <div class="rating">
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+
+                        
+                            <p>4.8 Ratings</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Advance Graphic Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="duration">
+                        <div class="time">
+                            <p>Course </p>
+                            <p class="month"> 5 month</p>
+                        </div>
+                        <div class="time">
+                            <p>Course Fee</p>
+                            <p class="month">375 USD</p>
+                        </div>
+                        <div class="time">
+                            <p>Total Classes</p>
+                            <p class="month">40 Classes</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="#">Enroll  Now</a>
+                    </div>
+        
+                </div>
+                <div class="iteam">
+                    <div class="img">
+                        <img src="{% static "images/ourcourse1.png" %}" alt="1">
+                        <div class="overlay"><i class="fas fa-link"></i></div>
+                    </div>
+                    <div class="introduction">
+                        <div class="name">
+                            <img src="{% static "images/ourcourse1Image.png" %}"  alt="11">
+                            <p> conduct part</p>
+                            <h5> Sujon shaha</h5>
+
+                        </div>
+                        <div class="rating">
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+
+                        
+                            <p>4.8 Ratings</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h5>Advance Graphic Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="duration">
+                        <div class="time">
+                            <p>Course  Duration</p>
+                            <p class="month"> 5 month</p>
+                        </div>
+                        <div class="time">
+                            <p>Course Fee</p>
+                            <p class="month">375 USD</p>
+                        </div>
+                        <div class="time">
+                            <p>Total Classes</p>
+                            <p class="month">40 Classes</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a href="#">Enroll  Now</a>
+                    </div>
+        
+                </div>
+
+            </div>
+        </div>
+        {% endblock course_part %}
+    </section>
+
+     <!-- ============================
+        course-part end
+    ============================== -->
+
+         <!-- ============================
+        our event-part start
+    ============================== -->
+            <section id="event">
+                {% block event %}
+                <div class="title">
+                    <h2>Our Events</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="image">
+                                <img src="{% static "images/calendar.png" %}" alt="clander">
+                            
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            
+                                <div class="iteam">
+                                    
+                                    <div class="main">
+                                        <div class="img">
+                                            <img src="{% static "images/event2.png" %}" alt="evenit">
+                                            <div class="event-text">
+                                                <p>15 </p>
+                                                <p>Nov</p>
+                                                
+                                            
+                                            </div>
+                                            
+                                                
+                                        </div>
+                                        <div class="text">
+                                            <h4>UI/UX Bootcamp Meetup 2019</h4>
+                                            <p>Lorem ipsum dolor sit amet, consecteturng elit sed do eiusmod temor</p>
+                                            <p class="extra"><i class="fas fa-map-marker-alt"></i> Seminar Room <i class="far fa-clock voice"></i> 9:00 AM - 1:00 PM</p>
+                                            
+    
+                                            <a href="#">Join Now</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="iteam">
+                                    
+                                    <div class="main">
+                                        <div class="img">
+                                            <img src="{% static "images/event2.png" %}" alt="evenit">
+                                            <div class="event-text">
+                                                <p>15 </p>
+                                                <p>Nov</p>
+                                                
+                                            
+                                            </div> 
+                                        </div>
+                                        <div class="text">
+                                            <h4>UI/UX Bootcamp Meetup 2019</h4>
+                                            <p>Lorem ipsum dolor sit amet, consecteturng elit sed do eiusmod temor</p>
+                                            <p class="extra"><i class="fas fa-map-marker-alt"></i> Seminar Room <i class="far fa-clock voice"></i> 9:00 AM - 1:00 PM</p>
+                                            
+    
+                                            <a href="#">Join Now</a>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                {% endblock event %}
+            </section>
+
+
+         <!-- ============================
+        our event-part end
+    ============================== -->
+
+
+    
+         <!-- ============================
+        our testimonial-part start
+    ============================== -->
+    {% block testimonial %}
+    <section id="testimonial-part">
+   
+        <div class="title">
+            <h2>Our Testimonial & FAQ</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 ">
+                    <div class="testimonial">
+                        <div class="testimonial-slider">
+                            <div class="iteam">
+                                
+                                <img src="{% static "images/aboutSlider1.png" %}" alt="1">
+                            </div>
+                            <div class="iteam">
+                                <img src="{% static "images/aboutSlider2.png" %}" alt="2">
+                            </div>
+                            <div class="iteam">
+                                <img src="{% static "images/aboutSlider3.png" %}" alt="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="text-slider">
+                        <div class="details">
+                            <p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiudr incididunt ut labore et dolore magna aliqua. Ut enim a minim eniam, quis nostrud exercitation ullamco laboris nisi ut liquip ex ea cmmodo consequat.</p>
+                            <h3>Shamima Sultana - <span class="student">  Satisfied Student </span>  </h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiudr incididunt ut labore et dolore magna aliqua. Ut enim a minim eniam, quis nostrud exercitation ullamco laboris nisi ut liquip ex ea cmmodo consequat.</p>
+                            <h3>Shamima Sultana - <span class="student" > Satisfied Student </span>  </h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiudr incididunt ut labore et dolore magna aliqua. Ut enim a minim eniam, quis nostrud exercitation ullamco laboris nisi ut liquip ex ea cmmodo consequat.</p>
+                            <h3>Shamima Sultana - <span class="student"> Satisfied Student </span>  </h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        
+
+                        
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              
+                                Why we join on your school? <i class="fas fa-angle-down"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                
+                                What facilities we will get?  <i class="fas fa-angle-down"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Why we join on your school? <i class="fas fa-angle-down"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+   
+    </section>
+    {% endblock testimonial %}
+
+
+    
+         <!-- ============================
+        our testimonial-part end
+    ============================== -->
+
+     <!-- ============================
+       our teacher part start
+    ============================== -->
+    <section id="teacher-part">
+        {% block teacher %}
+        <div class="title">
+            <h1>Our Teacher’s</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="container">
+            <div class="teacher-slider">
+              <div class="item">
+                <div class="img">
+                  <img src="{% static "./images/teacher1.png" %}" alt="teacher1">
+                </div>        
+                <div class="text">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                  <h3>Edward Leo</h3> 
+                  <p>Sr. Faculty Member</p>
+                  <img src="{% static "./images/counterPartBorderBottom.png" %}" alt="counterPartBorderBottom">
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="{% static "./images/teacher2.png" %}" alt="teacher2">
+                </div>
+                <div class="text">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                  <h3>Shamima Sultana</h3> 
+                  <p>Sr. Faculty Member</p>
+                  <img src="{% static "./images/counterPartBorderBottom.png" %}" alt="counterPartBorderBottom">
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="{% static "./images/teacher3.png" %}" alt="teacher3">
+                </div>
+                <div class="text">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                  <h3>Sujon Shaha</h3> 
+                  <p>Sr. Faculty Member</p>
+                  <img src="{% static "./images/counterPartBorderBottom.png" %}" alt="counterPartBorderBottom">
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="{% static "./images/teacher4.png" %}" alt="teacher4">
+                </div>         
+                <div class="text">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                  <h3>Rouhe Deo</h3> 
+                  <p>Sr. Faculty Member</p>
+                  <img src="{% static "./images/counterPartBorderBottom.png" %}" alt="counterPartBorderBottom">
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="{% static "./images/Teacher 05.jpg" %}" alt="Teacher 05">
+                </div>
+                <div class="text">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                  <h3>Edward Leo</h3> 
+                  <p>Sr. Faculty Member</p>
+                  <img src="{% static "./images/counterPartBorderBottom.png" %}" alt="counterPartBorderBottom">
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="{% static "./images/Teacher 06.jpg" %}" alt="Teacher 06">
+                </div>
+                <div class="text">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                  <h3>Alexander Alex</h3> 
+                  <p>Sr. Faculty Member</p>
+                  <img src="{% static "./images/counterPartBorderBottom.png" %}" alt="counterPartBorderBottom">
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="{% static "./images/Teacher 07.jpg" %}" alt="Teacher 07">
+                </div>
+                <div class="text">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                  <h3>Sakeba Irin</h3> 
+                  <p>Sr. Faculty Member</p>
+                  <img src="{% static "./images/counterPartBorderBottom.png" %}" alt="counterPartBorderBottom">
+                </div>
+              </div>
+              <div class="item">
+                <div class="img">
+                  <img src="{% static "./images/Teacher 08.jpg" %}" alt="Teacher 08">
+                </div>
+                <div class="text">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                  <h3>Shohan Hossain</h3> 
+                  <p>Sr. Faculty Member</p>
+                  <img src="{% static "./images/counterPartBorderBottom.png" %}" alt="counterPartBorderBottom">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        {% endblock teacher %}
+      </section>
+
+
+     <!-- ============================
+        our teacher-part end
+    ============================== -->
+
+    <!-- ============================
+        our blog-header start
+    ============================== -->
+        <section id="blog-header">
+           {% block blog_head %}{% endblock blog_head %}
+        </section>
+
+
+        <!-- ============================
+        our blog-header end
+    ============================== -->
+
+     <!-- ============================
+        our blog-part start
+    ============================== -->
+
+    <section id="blog-part">
+        {% block blog_part %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="iteam">
+                        <div class="img">
+                            <img src="{% static "images/blogBig1.png" %}" alt="big">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4><a href="#"> “Education is the Backbone of a nation” It’s Proven</a></h4>
+                                    <a href="#">https://education.com</a>
+                                </div>
+                                <div class="hide-text">
+                                    <p> <i class="fa fa-calendar" aria-hidden="true"></i> Published Date: 26 October 2018 </p>
+                                    <div class="right-text">
+                                        <p><i class="fa fa-eye" aria-hidden="true"></i> 2.5k Views</p>
+                                        <p class="share"><i class="fa fa-share" aria-hidden="true"></i> 2.5k Shares</p>
+                                    </div>
+                                    <div class="icon">
+                                      <a href="#"><i class="fab fa-facebook-f"></i></a>  
+                                      <a href="#"><i class="fab fa-twitter"></i></a>  
+                                      <a href="#"><i class="fab fa-behance"></i></a>  
+                                      <a href="#"><i class="fab fa-google-plus-g"></i></a>  
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="iteam">
+                        <div class="img">
+                            <img src="{% static "images/blogBig2.png" %}" alt="big">
+                            <div class="overlay">
+                                <div class="text">
+                                    <h4><a href="#"> “Education is the Backbone of a nation” It’s Proven</a></h4>
+                                    <a href="#">https://education.com</a>
+                                </div>
+                                <div class="hide-text">
+                                    <p> <i class="fa fa-calendar" aria-hidden="true"></i> Published Date: 26 October 2018 </p>
+                                    <div class="right-text">
+                                        <p><i class="fa fa-eye" aria-hidden="true"></i> 2.5k Views</p>
+                                        <p class="share"><i class="fa fa-share" aria-hidden="true"></i> 2.5k Shares</p>
+                                    </div>
+                                    <div class="icon">
+                                      <a href="#"><i class="fab fa-facebook-f"></i></a>  
+                                      <a href="#"><i class="fab fa-twitter"></i></a>  
+                                      <a href="#"><i class="fab fa-behance"></i></a>  
+                                      <a href="#"><i class="fab fa-google-plus-g"></i></a>  
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock blog_part %}
+
+
+
+    </section>
+
+
+     <!-- ============================
+        our blog-part end
+    ============================== -->
+
+       <!-- ============================
+        our blog-bottom start
+    ============================== -->
+
+
+        <section id="blog-bottom">
+            {% block blog_bottom %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="iteam">
+                            <div class="img">
+                                <img src="{% static "images/blogsmall1.png" %}" alt="big">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <h4><a href="#"> Traditional Elementary Education</a></h4>
+                                        <a href="#">https://education.com</a>
+                                    </div>
+                                    <div class="hide-text">
+                                        
+                           
+                                        <div class="icon">
+                                          <a href="#"><i class="fab fa-facebook-f"></i></a>  
+                                          <a href="#"><i class="fab fa-twitter"></i></a>  
+                                         
+                                          <a href="#"><i class="fab fa-google-plus-g"></i></a>  
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="iteam">
+                            <div class="img">
+                                <img src="{% static "images/blogsmall2.png" %}" alt="big">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <h4><a href="#"> Ideas and tips on using blogs</a></h4>
+                                        <a href="#">https://education.com</a>
+                                    </div>
+                                    <div class="hide-text">
+                                                                           
+                                    
+                                        <div class="icon">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>  
+                                            <a href="#"><i class="fab fa-twitter"></i></a>  
+                                             
+                                            <a href="#"><i class="fab fa-google-plus-g"></i></a>  
+                                          </div>
+                                    </div>
+                                    
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="iteam">
+                            <div class="img">
+                                <img src="{% static "images/blogsmall3.png" %}" alt="big">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <h4><a href="#"> Nominated best blogs in 2018</a></h4>
+                                        <a href="#">https://education.com</a>
+                                    </div>
+                                    
+                                      
+                                      
+                                    <div class="hide-text">
+                                        <div class="icon">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>  
+                                            <a href="#"><i class="fab fa-twitter"></i></a>  
+                                             
+                                            <a href="#"><i class="fab fa-google-plus-g"></i></a>  
+                                          </div>
+                                      
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="iteam">
+                            <div class="img">
+                                <img src="{% static "images/blogsmall4.png" %}" alt="big">
+                                <div class="overlay">
+                                    <div class="text">
+                                        <h4><a href="#">Blogs for Education & Knowledge</a></h4>
+                                        <a href="#">https://education.com</a>
+                                    </div>
+                                    <div class="hide-text">
+                                        <div class="icon">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>  
+                                            <a href="#"><i class="fab fa-twitter"></i></a>  
+                                           
+                                            <a href="#"><i class="fab fa-google-plus-g"></i></a>  
+                                          </div>
+                                      
+                                    </div>
+                                        
+                            
+                                    
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endblock blog_bottom %}
+
+
+        </section>
+
+
+
+
+       <!-- ============================
+        our blog-bottom end
+    ==============================-->
+
+
+    {% comment %} ======= from part {% endcomment %}
+    <section style="margin-top:-180px" class="ftco-section">
+        {% block contact %}
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Contact Form </h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-md-7 d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Get in touch</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+
+									<form method="POST" id="contactForm" name="contactForm">
+                                        {% csrf_token %}
+                                        {% if messages %}
+                                        {% for message in messages %}
+                                            <p>{{ message }}</p>
+                                        {% endfor %}
+                                    {% endif %}
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+									<h3 class="mb-4 mt-md-4">Contact us</h3>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        {% endblock contact %}
+	</section>
+    {% comment %} ==== form part end===== {% endcomment %}
+
+
+
+      <!-- ============================
+        Fotter-part start
+    ==============================-->
+    <section id="fotter-part">
+        {% block fotter %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="iteam">
+                        <div class="img">
+                            <img src="{% static "images/footerlogo.png" %}" alt="logo">
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullmco laboris nisi ut aliquip ex ea.</p>
+                        </div>
+                        <div class="icon">
+                             <a href="#"><i class="fab fa-facebook-f"></i></a>  
+                            <a href="#"><i class="fab fa-twitter"></i></a>  
+                            <a href="#"><i class="fab fa-behance"></i></a>  
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="list">
+                        <h4>Quick Links</h4>
+                                                                             
+                        <div class="main">
+                            <div class="left-text">
+                                <ul>
+                                    <li><a href="#">Home </a></li>
+                                    <li><a href="#">About us </a></li>
+                                    <li><a href="#">Terms & Conditions </a></li>
+                                    <li><a href="#">Contact us </a></li>
+                                    <li><a href="#">FAQ’s </a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="right-text">
+                                <ul>
+                                    <li><a href="#">Our Teachers </a></li>
+                                    <li><a href="#">Privacy Policy </a></li>
+                                    <li><a href="#">Latest News </a></li>
+                                    
+                                    <li><a href="#">Succes Stories</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="information">
+                        <h4>Contact Informations</h4>
+                        
+                        <div class="main">                           
+                             <div class="icon">
+                            <a href="#"><i class="fas fa-home"></i> <p></p></a>  
+                            <a href="#"><i class="fas fa-phone"></i></a>  
+                            <a href="#"><i class="fas fa-envelope"></i></a>  
+                            
+                            </div>
+                            <div class="place">
+                               <div class="home">
+                                   <p class="yellow">Location</p>
+                                   <p>1234, Parkstreet Avenue,</p>
+                                   <p>NewyorkAmerica.</p>
+                               </div>
+                               <div class="phone">
+                                    <p class="yellow">Phone</p>
+                                     <p>+880 1234 567 890, 02 0987 654</p>
+
+                                </div>
+                                <div class="email">
+                                    <p class="yellow">E-mail</p>
+                                
+                                    <p>gyan@gmail.com, learning@gmail.com</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                            
+ 
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock fotter %}
+
+
+    </section>
+
+
+
+
+    <!-- ============================
+        fotter-part end
+    ==============================-->
+
+        <!-- ============================
+        fotter-part bottom start
+    ==============================-->
+        <footer>
+            {% block footer %}
+            <div class="footer-slider">
+              
+                <div class="iteam">
+                     <div class="img">
+                         <img src="{% static "images/blogsmall1(2).png" %}" alt="1">
+                         <div class="overlay"><a href="#">Instagram Photos </a></div>
+                     </div>
+                </div> 
+                <div class="iteam">
+                      <div class="img">
+                          <img src="{% static "images/blogsmall2.png" %}" alt="2">
+                          <div class="overlay"><a href="#">Instagram Photos </a></div>
+                      </div>
+                </div> 
+                <div class="iteam">
+                      <div class="img">
+                          <img src="{% static "images/blogsmall3.png" %}" alt="3">
+                          <div class="overlay"><a href="#">Instagram Photos </a></div>
+                      </div>
+                </div> 
+                <div class="iteam">
+                      <div class="img">
+                          <img src="{% static "images/blogsmall4(2).png" %}" alt="4">
+                          <div class="overlay"><a href="#">Instagram Photos </a></div>
+                      </div>
+                </div> 
+                <div class="iteam">
+                     <div class="img">
+                         <img src="{% static "images/blogsmall3.png" %}" alt="5">
+                         <div class="overlay"><a href="#">Instagram Photos </a></div>
+                     </div>
+                </div> 
+                <div class="iteam">
+                     <div class="img">
+                         <img src="{% static "images/blogsmall1(2).png" %}" alt="6">
+                         <div class="overlay"><a href="#">Instagram Photos </a></div>
+                     </div>
+                </div> 
+                <div class="iteam">
+                     <div class="img">
+                         <img src="{% static "images/blogsmall4(2).png" %}" alt="7">
+                         <div class="overlay"><a href="#">Instagram Photos </a></div>
+ 
+                     </div>
+                </div> 
+                <div class="iteam">
+                     <div class="img">
+                         <img src="{% static "images/blogsmall2.png" %}" alt="8">
+                         <div class="overlay"><a href="#">Instagram Photos </a></div>
+                     </div>
+                </div> 
+ 
+             </div>
+            {% endblock footer %}
+        </footer>
+
+
+
+
+        <!-- ============================
+        fotter-part bottom end
+    ==============================-->
+
+           <!-- ============================
+        fotter-end bottom start
+    ==============================-->
+
+
+    <section id="footer-end-part">
+        
+        {% block footer_end %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024. All rights reserved by <span>RIFAT</span></p>
+                </div>
+            </div>
+        </div>
+        {% endblock footer_end %}
+        
+    </section>
+
+
+
+           <!-- ============================
+        fotter-end bottom end
+    ==============================-->
+
+
+
+
+
+    <script src= "{% static "js/jquery-1.12.4.min.js" %}"></script>
+    <script src= "{% static "js/bootstrap.bundle.min.js" %}"></script>
+    <script src= "{% static "js/slick.min.js" %}"></script>
+    <script src= "{% static "js/waypoints.min.js"%}"></script>
+    <script src= "{% static "js/jquery.counterup.min.js" %}"></script>
+    <script src= "{% static  'js/script.js ' %}"></script>
+    
+</body>
+</html>
